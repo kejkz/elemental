@@ -1,4 +1,4 @@
-require_relative '../lib/elemental'
+require_relative '../../lib/elemental'
 
 describe Elemental do
   class NewPage < described_class
