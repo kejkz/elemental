@@ -5,7 +5,9 @@
 Elemental gem is a simple wrapper around Capybara that gives you a 
 straight-forward way to work with web page elements. It's main purpose 
 is to make using page elements easier between different tests and 
-test suites, because feature tests can be quite complex and use a different . 
+test suites, because feature tests can be quite complex and use a complex 
+combinations of html accessors to drive the tests. This gem just streamlines 
+that task and gives you a way to define and reuse html elements. 
 
 
 ## Installation
@@ -25,6 +27,7 @@ class MyElements < Elemental
   field :my_field1, '#my_field'
   link :my_link1, '#my_link1', text: 'Some Text'
   element :my_element, '.my-selector'
+  elements :my_shiny_elements, '.my-shiny-selector-2'
 end
 ```
 
@@ -51,5 +54,3 @@ class MyComplexPage
   end
 end
 ```
-
-## 
