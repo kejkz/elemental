@@ -24,7 +24,16 @@ class MyElements < Elemental
   button :my_button1, 'My Button'
   field :my_field1, '#my_field'
   link :my_link1, '#my_link1', text: 'Some Text'
+  element :my_element, '.my-selector'
 end
+```
+
+This gives you two new methods for each of these selectors:
+
+```ruby
+my_elements = MyElements.new
+my_elements.my_button1 # => 'My Button'
+my_elements.my_button1_element # => Capybara::Node
 ```
 
 Methods for creating an element take a name of the element as first parameter, 
