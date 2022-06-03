@@ -22,7 +22,7 @@ Just create a new object for your elements and start testing.
 ```ruby
 
 class MyElements < Elemental
-  button :my_button1, 'My Button'
+  button :my_button1, '.my-button-class', text: 'My Button', match: :first
   field :my_field1, '#my_field'
   link :my_link1, '#my_link1', text: 'Some Text'
   element :my_element, '.my-selector'
