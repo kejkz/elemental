@@ -9,6 +9,6 @@ Gem::Specification.new do |s|
   s.files = ['lib/elemental.rb']
   s.homepage = 'https://rubygems.org/gems/elemental'
   s.license = 'MIT'
-  s.add_runtime_dependency 'capybara', '=> 3.0.0'
-  s.add_development_dependency 'rspec', '>= 3.0'
+  s.add_runtime_dependency 'capybara', ['=> 3.0.0']
+  s.add_development_dependency 'rspec', ['>= 3.0']
 end
