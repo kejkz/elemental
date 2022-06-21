@@ -47,7 +47,7 @@ using Ruby classes.
 
 ```ruby
 
-class MyComplexPage
+class MyComplexPage < Elemental
   def my_elements
     @my_element ||= MyElements.new
   end
