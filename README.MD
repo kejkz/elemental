@@ -4,10 +4,11 @@
 
 Elemental gem is a simple wrapper around [Capybara](https://github.com/teamcapybara/capybara) 
 that gives you a straight-forward way to work with web page elements. 
-It's main purpose is to make using page elements easier between different tests and 
-test suites, because feature tests can be quite complex and use a complex 
-combinations of html accessors to drive the tests. This gem just streamlines 
-that task and gives you a way to define and reuse html elements. 
+Its main purpose is to make using page elements sharing easier between different tests and 
+test suites, because feature tests can be quite complex and use an arrays of
+combinations of html accessors to drive to the proper test coverage. This gem just streamlines 
+that task and gives you a way to define and reuse html elements. And you can add a method 
+or two if you need to.
 
 ## Installation
 
